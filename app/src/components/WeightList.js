@@ -13,9 +13,9 @@ class WeightList extends React.Component {
                     </div>
                 </div>
                 <div className={Style.body}>
-                    {weightList.map((item) => {
+                    {weightList.map((item, index) => {
                         return (
-                            <div className={Style.bodyRow}>
+                            <div className={Style.bodyRow} key={index}>
                                 <div className={Style.date}>{item.date}</div>
                                 <div className={Style.weight}>{item.weight} kg</div>
                             </div>

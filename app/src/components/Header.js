@@ -1,4 +1,5 @@
 import React from 'react';
+import Style from './Header.module.css';
 
 class Header extends React.Component {
     constructor(props) {
@@ -12,8 +13,8 @@ class Header extends React.Component {
     render() {
         const {title} = this.state;
         return (
-            <header className="header">
-                <h1>{ title }</h1>
+            <header className={Style.header}>
+                <h1 className={Style.title}>{ title }</h1>
             </header>
         );
     }
