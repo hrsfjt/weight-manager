@@ -1,9 +1,11 @@
 .head {
     display: flex;
+    border-bottom: 1px solid #aaaaaa;
 }
 
 .headRow {
     display: flex;
+    padding-bottom: 4px;
 }
 
 .bodyRow {
