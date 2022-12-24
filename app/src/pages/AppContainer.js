@@ -43,16 +43,19 @@ class AppContainer extends React.Component {
 
     render() {
         const {date, records} = this.state;
+        const weightLabel = "kg";
+        const registerButtonLabel = "Register";
+        const resetButtonLabel = "Reset";
 
         return (
             <main>
                 <div className={Style.inputItem}>
                     <InputDate today={date} change={this.onChangeDate}></InputDate>
-                    <InputNumber label={"kg"} change={this.onChangeWeight}></InputNumber>
+                    <InputNumber label={weightLabel} change={this.onChangeWeight}></InputNumber>
                 </div>
                 <div className={Style.buttons}>
-                    <Button label={"Register"} click={this.register}></Button>
-                    <Button label={"Reset"} click={this.reset}></Button>
+                    <Button label={registerButtonLabel} click={this.register}></Button>
+                    <Button label={resetButtonLabel} click={this.reset}></Button>
                 </div>
                 <div>
                     <h2>Records</h2>
