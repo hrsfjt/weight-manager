@@ -1,0 +1,8 @@
+.inputItem {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    margin: 8px 0 0;
+}
